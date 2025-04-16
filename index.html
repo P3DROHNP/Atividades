@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento de Jardinagem</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Orçamento de Jardinagem</h1>
+    <form id="formulario">
+      <label for="nome">Nome do Cliente:</label>
+      <input type="text" id="nome" required>
+
+      <label for="metros">Tamanho da área (m²):</label>
+      <input type="number" id="metros" required>
+
+      <label for="servico">Serviço desejado:</label>
+      <select id="servico" required>
+        <option value="poda">Poda</option>
+        <option value="jardinagem">Jardinagem</option>
+        <option value="completa">Jardinagem Completa</option>
+      </select>
+
+      <button type="submit">Calcular Orçamento</button>
+    </form>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
